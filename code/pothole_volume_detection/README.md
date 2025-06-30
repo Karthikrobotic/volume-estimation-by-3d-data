@@ -7,7 +7,6 @@ This project processes RGB-D images of potholes to:
 - Align the extracted point cloud based solely on pothole boundaries,  
 - Estimate the pothole volume using convex-hull slicing.  
 
-Perfect for showcasing your 3D CV pipeline as a fresher.
 
 ## Key Algorithms and Techniques
 
