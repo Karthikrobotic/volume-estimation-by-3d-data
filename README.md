@@ -52,7 +52,7 @@ Modern road maintenance is costly, dangerous, and time‑consuming. **AutoPothol
 
 2. **Volume Computation**  
    Capture synchronized RGB and depth frames with **ZED2i**. Extract 2D contours, lift them to 3D point‑clouds, and compute volume via mesh integration.  
-   ➜ Full pipeline explained in [`code/pothole_volume/README.md`](code/pothole_volume/README.md)
+   ➜ Full pipeline explained in [`code/pothole_volume_detection/README.md`](code/pothole_volume_detection/README.md)
 
 3. **World‑Coordinate Projection**  
    Transform camera coordinates to the robot base frame using pre‑calibrated extrinsics. Generate a smooth “filling” path along the pothole contours—akin to 3D printing layers.  
