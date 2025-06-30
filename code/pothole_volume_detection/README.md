@@ -12,32 +12,36 @@ This project processes RGB-D images of potholes to:
 
 1. **Semantic Segmentation (YOLOv8)**  
    - Ultralytics YOLOv8 fine-tuned on a pothole dataset.  
-   - Clean masks via morphological opening and extract 2D boundaries.
      <img width="779" alt="Image" src="https://github.com/user-attachments/assets/feecf994-43b1-4c32-873b-c3a1d02faab9" />
 
 2. **Depth Back-Projection**  
    - Use camera intrinsics (fx, fy, cx, cy) to convert depth to (X, Y, Z).  
-   - Build full-scene point cloud.
+   - Build pothole point cloud.
    - <img width="686" alt="Image" src="https://github.com/user-attachments/assets/022ad4b4-b566-4b0b-aa41-b3de2de3de3f" />
 
 3. **Instance Point Cloud Extraction**  
    - Resize mask → threshold → extract valid 3D points.  
-   - Separate boundary vs. interior points.
+   - Clean masks via morphological opening and extract 2D boundaries.
      <img width="1440" alt="Image" src="https://github.com/user-attachments/assets/2f0e736c-dc90-48a0-962b-eda2b6e3434d" />
 
 4. **Boundary-Based Plane Fitting & Alignment**  
    - Fit plane to boundary points via SVD → get normal.  
    - Rotate so normal aligns with Z-axis, then translate to origin.
      <img width="730" alt="Image" src="https://github.com/user-attachments/assets/67aee6df-c07b-4b3e-b0a1-de4d8722c07e" />
-     ![Image](https://github.com/user-attachments/assets/592f3a69-b054-403a-9def-ce41b996ba8e)
+     <img width="973" alt="Image" src="https://github.com/user-attachments/assets/36c504a8-fea0-40e3-b601-21039972ce59" />
 
-5. **Convex-Hull Slicing for Volume Estimation**  
-   - Slice cloud into horizontal slabs (dz).  
+5. **Generate 3D mesh**  
+   - With help of Ball-Pivoting Algorithm (BPA) generate mesh.
+     <img width="778" alt="Image" src="https://github.com/user-attachments/assets/1d668f1e-f3cb-4dc0-a8fd-4b701e25919a" />
+   
+
+6. **Convex-Hull Slicing for Volume Estimation**
+   - Slice cloud into horizontal slabs (dz).
+   - applying shoelace algorithm to find the polygon areas
    - Compute 2D convex hull area × dz → sum volumes.
+     <img width="942" alt="Image" src="https://github.com/user-attachments/assets/6e7549d8-c625-4802-b57f-dc72df086b14" />
 
-6. **Cross-Sectional Analysis (Optional)**  
-   - Build BPA mesh with Trimesh & Open3D.  
-   - Extract contour cross-sections and compute section areas.
+
 
 ## Step-by-Step Workflow
 
