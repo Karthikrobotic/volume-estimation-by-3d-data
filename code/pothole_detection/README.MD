@@ -30,8 +30,11 @@ We selected these models based on:
 
 ## 📦 Dataset & Annotation
 - Data collected from **Roboflow** and **Kaggle** datasets containing pothole images.
-- Annotated using **Roboflow** for segmentation masks.
+- Annotated using **Roboflow** for segmentation masks. 
 - Dataset directly imported into training pipelines from Roboflow for convenience.
+**Dataset Link:** You can access and explore the complete dataset used in this project on Roboflow Universe:
+
+[Pothole Segmentation Dataset on Roboflow Universe](https://universe.roboflow.com/car-xztrx/pot-bwaur)
 
 ---
 
