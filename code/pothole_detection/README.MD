@@ -40,6 +40,7 @@ Training was done in **Google Colab** using GPU acceleration:
 - Trained both YOLOv8 and Faster R-CNN.
 - Tuned hyperparameters for better segmentation performance.
 - Compared results to select the best model.
+- Finally save the model weights after training.
 
 ---
 
