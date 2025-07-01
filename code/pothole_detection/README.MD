@@ -76,7 +76,6 @@ Based on these results, **YOLOv8** was chosen for final deployment because it de
 ![Image](https://github.com/user-attachments/assets/7af2c41c-2bc3-44b9-ac93-d59426ac0047)
 ![Image](https://github.com/user-attachments/assets/1a1950fb-7ce5-485b-bb3e-38a8e5ae619c)
 
-*(To upload: drag & drop images into your GitHub repository and link them in the README.)*
 
 ---
 
