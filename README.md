@@ -48,7 +48,7 @@ Modern road maintenance is costly, dangerous, and time‑consuming. **AutoPothol
 
 1. **Pothole Detection**  
    We train **YOLOv8** (for speed) and **Faster R‑CNN** (for accuracy) on annotated pothole images.  
-   ➜ See detailed code & training logs in [`code/pothole_ml/`](code/pothole_detection/README.md)
+   ➜ See detailed code & training logs in [`code/pothole_detection/README.md`](code/pothole_detection/README.md)
 
 2. **Volume Computation**  
    Capture synchronized RGB and depth frames with **ZED2i**. Extract 2D contours, lift them to 3D point‑clouds, and compute volume via mesh integration.  
