@@ -1,8 +1,3 @@
-## 🚀 Open in Google Colab
-
-You can run this notebook directly in Google Colab by clicking the link below:
-
-[Open Notebook in Colab](https://colab.research.google.com/drive/1qUiD0FeT-U56RVl5UfQerCycA-l6mVZa#scrollTo=2YLOrhRrGOLV)
 ## 🚀 Project Notebooks (Open in Google Colab)
 
 This project utilizes two main Google Colab notebooks for different aspects of the work. You can open and run them directly by clicking the links below:
